@@ -1,0 +1,147 @@
+/* Variables */
+:root{
+    --azul:#293462;
+    --blanco: white;
+    --negro: #313337;
+    --space:10px;
+}
+
+/* Variables */
+html,body{
+    padding: 0px;
+    margin: 0px;
+    font-style: 12px;
+    font-family: Helvetica;
+}
+nav{
+    background-color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--negro);
+}
+.logo{
+    background-color: var(--azul);
+    page-break-after: var(--space);
+    color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+}
+nav h3{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+nav h3 a{
+   color: var(--azul); 
+   text-decoration: none;
+}
+h3 a:hover{
+    color: grey;
+}
+/* Main Section */
+.main{
+    padding: 15%;
+    text-align: center;
+}
+.cards{
+    background-image: url("/src/fondo.jpg");
+    height:20px;
+    border-radius: 5%;
+    background-size: cover;
+    background-position: center top;
+    padding: 10%;
+    display:flex;
+    
+}
+.product .content{
+    background-color: var(--blanco);
+    padding: 15px;
+    box-shadow: 0 0 2px rgb(177, 166, 166);
+}
+.product{
+    padding: var(--space);
+    margin-top: -200px;
+}
+.img-content{
+    text-align: center;
+}
+.categorias{
+    padding: 5%;
+    display: flex;
+}
+.categoria .content{
+    background-color: var(--blanco);
+    padding: 0px;
+    box-shadow: 0 0 2px rgb(177, 166, 166);
+}
+.categoria{
+    text-align: center; 
+}
+img{
+    height: 100px;
+}
+.main-button{
+    background-color: var(--azul);
+    width: 100%;
+    padding: var(--space);
+    font-style: 17;
+    color: var(--blanco);
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.main-button:hover{
+    background-color: #5a9621;
+}
+.content-title{
+    text-align: center;
+    padding: 5%;
+}
+
+  
+  /* Mentions */
+  .menciones{
+    display: flex;
+    padding: 5%;
+  }
+  .mencion img{
+    width: 300px;
+    height: 100px;
+  }
+  h2.mention_title{
+    text-align: center;
+  }
+  .mencion{
+    padding: var(--space);
+  }
+  .content_mention{
+    box-shadow: 0px 0 2px 1px #e6e5e9;
+  }
+  
+  /* ------------------------------------------- Footer */
+  footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: Helvetica;
+    background-color: var(--negro);
+    padding: var(--space);
+    color: var(--blanco);
+  }
+  .contact a{
+    color: var(--green-color);
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
