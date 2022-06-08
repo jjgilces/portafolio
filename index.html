@@ -3,83 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/animation.css">
-    
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Bad Profile</title>
 </head>
 <body>
-    <!-- Nuestro menú en un navbar -->
     <nav class="fadeInDown">
-        <div class="brandImage ">
-           <a href="index.html"> <img src="src/logo.png" height="50px" alt="logo profile"></a>         
+        <div >
+           <a href="index.html"> <img src="src/logo.png"  alt="logo profile"></a>         
         </div>
-        <div class="logo">
-            <h1> JJGILCES</h1>
+        <div id="title">
+            <h1>JJGILCES</h1>
         </div>     
         <div class="navOptions">
             <ul>           
-                <h3><a href="#faqs">Home</a></h3>
+                <h3><a href="index.html">Home</a></h3>
                 <h3><a href="skills.html">Skills</a></h3>
                 <h3><a href="aboutme.html">About me</a></h3>
             </ul>
         </div>
     </nav>
-    <header class="main fadeIn">
-        <h1>Every day you get our best.
-            Everyone can be a little green!</h1>
+    <header>
+            <picture>
+                <source srcset="src\perfil.jpeg">     
+                <img src="src/perfil.jpeg" alt="perfil"> 
+                <span>Johan Jair Gilces Reyes</span>
+              </picture>
     </header>
     <section class="cards">
-        <div class="product fadeInUp">
-            <div class="content">
-                    <h2>Descripción</h2>
-                    <p>Lorem, ipsum  adipisicing elit. Alias, perspiciatis, repellat consequuntur nihil omnis aliquid commodi repudiandae quaerat dolorum quidem ut magnam?</p>
-       
+        <div class="content">
+            <div class="headtitle" id="overview">
+                <h2>Overview</h2>
+            </div>
+            <div class="text">
+                <p>I am cancer with ascendant
+                    in Libra and Moon in Capricorn. I'm 20 years old, I like anime (but I do take bath) and my favorite artist, as you will realize, is Bad Bunny. Some of my favorites animes are:
+                </p>
+                <div class="listas">
+                    <ul>
+                        <li>One Puch Man</li>
+                        <li>Tokyo Ghoul</li>
+                        <li>Naruto</li>
+                        <li>Death Note</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="headtitle">
+                <h2>Programming</h2>
+            </div>
+            <div class="text">
+                <p>Computer engineering at Escuela Superior Politecnica del Litoral (ESPOL) student with skills in web development, multiples programming languages, version control (git), as well as networks and connectivity. </p>
                 <div class="img-content">
                     <img src="src/animes.png" alt="noodle">
                 </div>
-            </div>
-        </div>
-        <div class="product fadeInUp">
-            <div class="content">
-                
-                <h2>Lenguajes</h2>
-                <p>Lorem ipsum dolor sit amet  adipisicing elit. Adipisci amet est non illum nihil, ipsa vitae dolores aut dolorum laudantium. Minima, a!</p>
-                <button href="#" class="main-button">Want it</button>
-                <div class="img-content">
-                    <img src="src/sushi.png" alt="noodle">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="categorias">
-        <div class="categoria">
-            <div class="content">
-                <div class="img-content">
-                    <img src="src/soft.png" alt="noodle">
-                </div>
-                <h2>Lo más suavecito</h2>
-                    <p>Lorem, ipsum s, repellat consequuntur nihil omnis aliquid commodi repudiandae quaerat dolorum quidem ut magnam?</p>     
-            </div>
-        </div>
-        <div class="categoria">
-            <div class="content">
-                <div class="img-content">
-                    <img src="src/awesom.png" alt="noodle">
-                </div>
-                <h2>Lo más increíble</h2>
-                <p>Lorem, ipsum  atis, repellat consequuntur nihil omnis aliquid commodi repudiandae quaerat dolorum quidem ut magnam?</p>         
-            </div>
-        </div>
-        <div class="categoria">
-            <div class="content">
-                <div class="img-content">
-                    <img src="src/security.png" alt="noodle">
-                </div>
-                <h2>Lo más seguro</h2>
-                <p>Lorem, ipsum  nsequuntur nihil omnis aliquid commodi repudiandae quaerat dolorum quidem ut magnam?</p>         
             </div>
         </div>
     </section>
@@ -88,7 +71,5 @@
         <div class="option">Terminos y condiciones</div>
         <div class="option">johanjairgr@gmail.com</div>
     </footer>
-
-    <script src="scripts/index.js"></script>
 </body>
 </html>

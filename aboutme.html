@@ -7,21 +7,58 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Nuestro menú en un navbar -->
+    <!-- menú en un navbar -->
     <nav class="fadeInDown">
-        <div class="brandImage ">
-           <a href="index.html"> <img src="src/logo.png" height="50px" alt="logo profile"></a>         
+        <div >
+           <a href="index.html"> <img src="src/logo.png"  alt="logo profile"></a>         
         </div>
-        <div class="logo">
-            <h1> JJGILCES</h1>
+        <div>
+            <h1>JJGILCES</h1>
         </div>     
         <div class="navOptions">
             <ul>           
-                <h3><a href="#faqs">Home</a></h3>
+                <h3><a href="index.html">Home</a></h3>
                 <h3><a href="skills.html">Skills</a></h3>
                 <h3><a href="aboutme.html">About me</a></h3>
             </ul>
         </div>
     </nav>
+    <section class="information">
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+        defer
+      ></script>
+        <div class="video">
+            <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contenedor">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+          
+    </section>
 </body>
 </html>
