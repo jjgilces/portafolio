@@ -28,7 +28,7 @@ h2 {
 h3 {
     font-size: clamp(1rem, 1rem + 1.10vw, 2.5rem);
 }
-p,li{
+p,li,span{
     font-size: 3vmin;
 }
 /* NAV */
@@ -92,17 +92,17 @@ picture span {
     color: var(--naranja);
 }
 /* SECTION */
-.cards{
+.cards, .menciones{
     display: flex;
     padding: 2%;
     background-size: cover;
-    background-position: center top;
+
     justify-content: space-between;
 }
 .cards .content{
     background: white;
     border-radius: 10px;
-    box-shadow: 0rem 1rem 2rem -2rem var(--negro);
+    box-shadow: 0rem 2rem 3rem -2rem var(--negro);
     position: relative;
     transition: all 0.3s ease;
     width: 40%;
@@ -116,6 +116,7 @@ picture span {
     background-color: var(--naranja);
     border: black solid;
     color: white;
+    border-radius: 1em;
     padding: 1%;
 }
 .cards .headtitle h2{
@@ -143,13 +144,72 @@ picture span {
     margin-left: auto;
     margin-right: auto;
 }
+/*footer */
 footer{
     display: flex;
     justify-content: space-between;
-    background-color: var(--amarillo);
+    background-color: var(--azul);
     padding: var(--space);
-    color: var(--blanco);
+    
 }
 footer div{
     font-size: 2vmin;
+    color: var(--blanco);
+}
+
+
+
+/* Segunda hoja */
+
+
+.mencion {
+    display:grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-rows: 1.5fr 1.5fr;
+    width: 30%;
+}
+.img-content img{
+    width: 7rem;
+    height: auto;
+    padding: 5%;
+}
+#data-table{
+    width: 60%;
+    
+}
+.styled-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.styled-table th{
+    padding: 12px 15px;
+    color: var(--blanco);
+}
+.styled-table td{
+    padding: 12px 15px;
 }
