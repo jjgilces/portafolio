@@ -7,6 +7,7 @@
     --rojo:#F24C4C;
     --naranja:#EC9B3B;
     --amarillo:#F7D716;
+    --verde:#009879;
 }
 /* universales*/
 *{
@@ -29,7 +30,7 @@ h3 {
     font-size: clamp(1rem, 1rem + 1.10vw, 2.5rem);
 }
 p,li,span{
-    font-size: 3vmin;
+    font-size: 0.8em;
 }
 /* NAV */
 nav{
@@ -52,6 +53,9 @@ nav h3{
 }
 nav h3 a{
     text-decoration: none;
+}
+.menu {
+    display: none;
 }
 h3 a:hover{
     color: black;
@@ -92,12 +96,11 @@ picture span {
     color: var(--naranja);
 }
 /* SECTION */
-.cards, .menciones{
+.cards, .categoria{
     display: flex;
     padding: 2%;
     background-size: cover;
-
-    justify-content: space-between;
+   
 }
 .cards .content{
     background: white;
@@ -162,20 +165,31 @@ footer div{
 /* Segunda hoja */
 
 
-.mencion {
+.photos {
     display:grid;
-    grid-template-columns: 1.5fr 1.5fr;
-    grid-template-rows: 1.5fr 1.5fr;
-    width: 30%;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    width: 100%;
+
+    
+}
+.img-content{
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0.5);
 }
 .img-content img{
-    width: 7rem;
+    width: 8rem;
     height: auto;
-    padding: 5%;
+    padding: 2%;
+    object-fit: contain;
+    filter: grayscale(0.3);
 }
 #data-table{
-    width: 60%;
-    
+    width: 70%;
+    padding-right: 5%;
 }
 .styled-table{
     border-collapse: collapse;
@@ -186,7 +200,7 @@ footer div{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 .styled-table thead tr {
-    background-color: #009879;
+    background-color: var(--verde);
     color: #ffffff;
     text-align: left;
 }
@@ -213,3 +227,26 @@ footer div{
 .styled-table td{
     padding: 12px 15px;
 }
+.menciones{
+    display: block;
+    padding: 5%;
+  }
+
+  .mention_title{
+    text-align: center;
+    color: var(--verde);
+  }
+  .mencion{
+    padding: var(--space);
+    width: 23%;
+    float: left;
+
+  }
+  .content_mention{
+    box-shadow: 0px 0 2px 1px #e6e5e9;
+  }
+  .img-mention img{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+  }

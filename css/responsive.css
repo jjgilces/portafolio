@@ -4,17 +4,40 @@
         width: 330px;
     }
     .cards {
-        display: block;
+        display: flex;
         height: auto;
         margin-left: auto;
         margin-right: auto;
+        flex-direction: column;
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+        margin: 5% auto;
+        padding: 70%;
+        justify-content: center;
+     
+    }
+    h2{
+        font-size: 1em;
+    }
+    .content p, li{
+       
+        font-size: 0.9em;
     }
    nav .navOptions{
-       display: none;
+    display: none;
    }
-
+   .menu {
+    display:block;
+}
    .main{
        padding: 4%;
    }
+   picture span{
+       font-size: 1em;
+       width: 100%;
+   }
+
   
  }
